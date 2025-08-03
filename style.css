@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 h1 {
@@ -16,10 +17,12 @@ h1 {
 }
 div {
     max-width: 600px;
+    width: 100%;
 }
 
 p {
     font-size: 1.4em;
+    min-width: 200px;
 }
 
 i {
@@ -28,5 +31,40 @@ i {
 }
 
 img {
+    width: inherit;
     max-width: inherit;
+    min-width: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 999px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #4f46e5; /* Indigo-600 */
+    color: white;
+    border-color: #4f46e5;
+}
+
+label:hover {
+    background-color: #e0e0e0;  
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

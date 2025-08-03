@@ -19,7 +19,8 @@
             learner you are predominantly.</p>
             <hr>
         <img src="https://capsexpress.com.br/blog/wp-content/uploads/2022/09/Como-a-identidade-visual-da-sua-marca-impacta-nas-vendas-do-produto-final.png" alt="visual">
-        <p><strong>Highest score in group 1</strong>: You
+        <p><strong>Highest score in group 1</strong>: <br>
+            You
             are probably a <i>visual learner</i>.
             Chances are that you prefer taking in
             information through your eyes. You
@@ -30,7 +31,8 @@
             can check them in the future.</p>
         <p></p>
         <img src="https://ldnetwork.org/fixefybo/2023/10/Auditory-Processing-DIsorder-1.jpg" alt="Auditory">
-        <p><strong>Highest score in group 2</strong>: You are
+        <p><strong>Highest score in group 2</strong>: <br>
+            You are
             probably an <i>auditory learner</i>. You
             probably like to get information
             through your ears. You appreciate
@@ -40,7 +42,8 @@
             During classes, you'd probably rather
             listen to the teacher than take notes.</p>
             <img src="https://www.prometheanworld.com/wp-content/uploads/2022/12/MicrosoftTeams-image-4.jpg" alt="Knestetic">
-        <p><strong>Highest score in group 3</strong>: You are
+        <p><strong>Highest score in group 3</strong>: <br>
+            You are
             probably a <i>kinesthetic learner</i>.
             You probably like to get information
             through your hands, body or
@@ -51,6 +54,22 @@
             but because the movement of your
             hand across paper helps you keep
             the information you are studying.</p>
+
+        <h1>Question</h1>
+        <p>Based on what you read and your answers to the quiz, what kind of learner are you?</p>
+        <form action="">
+            <input type="radio" name="learner" id="auditory">
+            <label for="auditory">auditory</label>
+            <input type="radio" name="learner" id="visual">
+            <label for="visual">visual</label>
+            <input type="radio" name="learner" id="kinesthetic">
+            <label for="kinesthetic">kinesthetic</label>
+        </form>
+
+        <script>
+            const radio = document.querySelectorAll('input')
+            radio.forEach((radio) => radio.addEventListener('click', () => alert('Thank you for your answer')))
+        </script>
     </div>
 </body>
 
